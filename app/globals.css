@@ -17,3 +17,73 @@
 .photo-frame::after{background:none}
 @media(max-width:850px){.photo-frame{width:min(340px,85%);height:485px}}
 @media(max-width:520px){.photo-frame{width:min(290px,87%);height:395px}.visual{height:445px}}
+
+/* THE NEETU EDITION — lilac scrapbook / whimsical editorial */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,500,40,1;1,9..144,500,40,1&display=swap');
+:root{--ink:#352445;--purple:#70479f;--pink:#dc7fad;--cream:#fffaf0;--lav:#e8d4f6}
+.site{background:radial-gradient(ellipse 48% 42% at 95% 8%,#fae0e8dd,transparent),radial-gradient(ellipse 62% 60% at 5% 95%,#e9d8fcbb,transparent),#faf6ee}
+.site::before{content:"";inset:0;position:absolute;pointer-events:none;opacity:.19;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.17'/%3E%3C/svg%3E")}
+h1,h2{font-family:Fraunces,Georgia,serif;letter-spacing:-.065em}
+h1 em,h2 em{font-weight:500;text-decoration:underline;text-decoration-color:#dcb4cd77;text-decoration-thickness:.09em;text-underline-offset:.12em}
+.top{border-bottom:1px solid #9d75b51d;background:#ffffff5c;backdrop-filter:blur(18px)}
+.brand{font-size:19px;font-family:Fraunces,Georgia,serif;font-style:italic;font-weight:600}
+.brand span:first-child{filter:drop-shadow(0 3px 4px #9171a34b)}
+.top-date{color:#785793}.top .stepcount{border-color:#b690c4;background:#fffaf7;color:#8654a1}
+.eyebrow{color:#8c62a5;font-size:11px}
+.stage{animation:page-float-in .65s cubic-bezier(.16,1,.3,1) both}
+@keyframes page-float-in{from{opacity:0;transform:translateY(25px) scale(.985);filter:blur(5px)}to{opacity:1;transform:translateY(0) scale(1);filter:blur(0)}}
+.sparkles span{color:#b785c0}
+.screen{position:relative}
+.intro{padding:45px 28px 65px}
+.intro::before,.intro::after{position:absolute;top:25%;font-family:Fraunces,Georgia,serif;color:#bc8ccd;opacity:.7;font-size:75px;pointer-events:none}
+.intro::before{content:"✳";left:-13%}.intro::after{content:"♡";right:-13%;transform:rotate(15deg)}
+.intro-panda{position:relative;width:210px;height:210px;display:grid;place-items:center;margin:0 auto 7px}
+.intro-halo{position:absolute;inset:5px;background:#f2dbf7;border:2px dashed #c99cd2;border-radius:48% 52% 40% 55%;transform:rotate(-9deg);box-shadow:0 15px 38px #956eb32a}
+.intro-panda svg{position:relative;z-index:1;filter:drop-shadow(0 10px 9px #694e7850)}
+.panda-speech{z-index:2;position:absolute;right:-107px;top:15px;background:#fff;border:1px solid #e7d8ed;box-shadow:0 8px 25px #77528c2a;padding:9px 13px;border-radius:17px 17px 17px 4px;transform:rotate(9deg);font:italic 15px Fraunces,Georgia,serif;color:#815597;white-space:nowrap}
+.intro h1{font-size:clamp(63px,8vw,102px);line-height:1.1;margin:12px 0}
+.intro>p{font-size:16px}
+.unlock{padding:16px;background:#ffffff97;border:1px solid #ddc5e7;border-radius:22px;box-shadow:0 17px 42px #86689818}
+.unlock-field{box-shadow:none}.unlock-field button,.primary{background:#70469b;border-radius:11px;letter-spacing:.005em}
+.unlock-field button:hover,.primary:hover{background:#553179}
+.small-note{font-family:Fraunces,Georgia,serif;font-size:15px;font-style:italic}
+.tracker{padding:8px}.tracker button{height:7px;background:#dfc4e7}.tracker button.on{background:#754ba1;box-shadow:0 2px 10px #7448a44d}
+.birthday{gap:6vw}
+.birthday h1{font-size:clamp(73px,8vw,120px)}
+.birthday-copy{z-index:2}.pill{background:#fff;border:1px solid #dfc2eb;box-shadow:0 6px 23px #c39ad522;border-radius:50px;color:#8752a7}
+.hero-doodle{margin-top:28px;font:italic 18px Fraunces,Georgia,serif;color:#b4789e;transform:rotate(-5deg)}
+.visual{isolation:isolate}
+.visual::before{width:min(530px,100%);height:min(530px,100%);border:2px dashed #c59fd8;opacity:.7;animation:slow-spin 90s linear infinite}
+@keyframes slow-spin{to{transform:rotate(360deg)}}
+.photo-frame{transform:rotate(3deg);border:13px solid #fffefa;box-shadow:0 30px 0 -18px #d5b5d7,0 40px 90px #684b8555,0 0 0 8px #e8d2e6;overflow:hidden;z-index:1}
+.photo-frame img{background:#e8dbe9;object-fit:contain;object-position:center;filter:none}
+.photo-corner{position:absolute;bottom:0;left:0;right:0;background:#fffaf0e8;z-index:4;font-size:9px;text-align:center;letter-spacing:.19em;font-weight:800;color:#8d699d;padding:12px 5px}
+.photo-tape{position:absolute;z-index:3;top:26px;left:23%;width:105px;height:37px;background:#eebbd4b8;transform:rotate(-10deg);clip-path:polygon(3% 0,100% 2%,97% 100%,0 98%);box-shadow:0 4px 9px #88688c35}
+.photo-badge{top:14%;right:0;background:#fff6c9;outline:1px dashed #b88d6c;outline-offset:-8px;color:#674a62;font-weight:600;width:130px;height:130px;box-shadow:0 15px 35px #815e8c2c}
+.float-panda{bottom:8px;left:0;transform:rotate(-10deg) scale(1.22)}
+.orbit{z-index:2;text-shadow:0 8px 20px #c889b759}
+.memory-grid{gap:15px}.memory-card{position:relative;border:1px solid #e8d4e9;border-radius:9px;transform:rotate(-1.5deg);min-height:253px;background:#fffefa;box-shadow:0 19px 35px #8e6c9920;overflow:hidden}
+.memory-card:nth-child(even){transform:rotate(1.5deg);background:#f7e8fc}
+.memory-card:nth-child(3){background:#fff4dd}
+.memory-card:nth-child(4){background:#faeaf2}
+.memory-card::before{content:"";position:absolute;width:44px;height:14px;background:#d6b0cead;top:-2px;left:calc(50% - 22px);transform:rotate(-5deg)}
+.memory-card:hover,.memory-card.selected{transform:translateY(-10px) rotate(0deg);border:1px solid #ab77be;box-shadow:0 23px 42px #8e6c9939}
+.memory-card strong{font-family:Fraunces,Georgia,serif;font-weight:500;font-size:21px}
+.memory-emoji{filter:drop-shadow(0 8px 8px #865d8220)}
+.memory-detail{background:#fffefa;border:1px dashed #ba94c8;box-shadow:0 8px 25px #956fa91b;font-family:Fraunces,Georgia,serif;color:#7c5895}
+.letter-side h1{font-size:clamp(58px,6vw,92px)}
+.letter-paper{position:relative;background:repeating-linear-gradient(transparent,transparent 35px,#aa8caf12 36px),#fffdf7;border:1px solid #e8cfdf;border-radius:4px;transform:rotate(1deg);box-shadow:0 26px 68px #72518538,10px 10px 0 #efdeea;max-height:min(76vh,810px)}
+.letter-paper h2{font-family:Fraunces,Georgia,serif}.letter-paper p{font-size:15px}.letter-paper .sign{font-family:Fraunces,Georgia,serif}
+.wax-stamp{position:absolute;right:24px;top:49px;width:46px;height:46px;border-radius:50%;background:#bb7799;color:#fff;display:grid;place-items:center;font-size:29px;box-shadow:0 3px 10px #8b527d48}
+.hug-panda{background:radial-gradient(circle at 30% 20%,#fffafa,#eed4f7);border:4px dashed #c99fd4;box-shadow:0 24px 58px #9360ad35}
+.hug-panda svg{filter:drop-shadow(0 11px 8px #674e7850)}
+.hug-panda:active{transform:scale(.95) rotate(-9deg)}
+.hug-bubble{font-family:Fraunces,Georgia,serif;font-style:italic;font-size:19px;color:#79469f;border:1px solid #e5cbeb}
+.panda-stats span{border:1px solid #e4cde8}
+.birthday-cake{filter:drop-shadow(0 18px 15px #bf98c04d)}
+.final-message{border:1px dashed #bc95ce;background:#fffdf8;box-shadow:0 16px 32px #a077aa25}
+footer{border-top:1px solid #a987bd20}
+button:focus-visible,input:focus-visible{outline:3px solid #d38fbd;outline-offset:4px}
+@media(max-width:850px){.birthday{gap:10px}.photo-tape{top:5px;left:28%}.visual::before{width:390px;height:390px}.intro::before,.intro::after{display:none}}
+@media(max-width:520px){.intro-panda{height:175px;width:175px}.intro-panda svg{width:150px;height:150px}.panda-speech{right:-65px;top:1px;font-size:12px;padding:7px}.intro h1{font-size:62px}.intro{padding-top:8px}.birthday h1{font-size:65px}.visual::before{width:310px;height:310px}.photo-frame{height:395px;width:min(280px,85%)}.photo-badge{width:94px;height:94px;font-size:12px;right:1%}.photo-tape{left:24%}.memory-card{min-height:220px}.memory-card strong{font-size:17px}.letter-paper{max-height:none;transform:none}.wax-stamp{right:17px;top:50px;width:35px;height:35px}.top{height:69px}}
+@media(prefers-reduced-motion:reduce){.visual::before{animation:none}}
